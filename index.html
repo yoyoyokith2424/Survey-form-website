@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolt: Survey Form</title>
+<link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono" />
+</head>
+
+<body>
+    <h1 id="title">Bolt Text Editor Survey Form</h1>
+    <p id="description">
+        Thank you for taking your time in giving us a feedback about our Bolt text Editor
+    </p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name: </label><br />
+        <input type="text" name="name" id="name" required placeholder="Enter your Name" autofocus /><br /><br />
+
+        <label for="email-id" id="email-label">Email address: </label><br />
+        <input type="email" name="email-id" id="email" required placeholder="Enter your Email address" /><br /><br />
+
+        <label for="age" id="number-label">Age: </label><br />
+        <input type="number" name="age" id="number" required min="18" max="100" placeholder="Enter your Age" /><br /><br />
+
+        <label for="OS">On what OS you are currently using Bolt: </label><br /><br>
+        <select id="dropdown" name="OS">
+        <option value="0">Select an Operating System</option>
+        <option value="Windows">Windows</option>
+        <option value="macOS">macOS</option>
+        <option value="Linux">Linux</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <label for="gender" id="gender">Gender: </label><br />
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <label for="dropdown-menu">Will you recommend Bolt to your friends? </label
+      ><br>
+      <input list="menu" name="dropdown-menu" placeholder="Choose an option"/><br />
+      <datalist id="menu">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </datalist>
+      <br>
+
+      <label
+        >What are the fields do you want us to focus in the future? (Check all
+        that applies)</label
+      ><br /><br>
+      <input type="checkbox" id="option1" name="option1" value="Themes" />
+      <label for="option1">Themes</label><br />
+      <input type="checkbox" id="option2" name="option2" value="Extensions" />
+      <label for="option2">Extensions</label><br />
+      <input type="checkbox" id="option3" name="option3" value="Forum" />
+      <label for="option3">Forum</label><br />
+      <input type="checkbox" id="option4" name="option4" value="Shortcuts" />
+      <label for="option4">Shortcuts</label><br />
+      <input
+        type="checkbox"
+        id="option5"
+        name="option5"
+        value="GithubPackages"
+      />
+      <label for="option5">Github Packages</label><br />
+      <input
+        type="checkbox"
+        id="option6"
+        name="option6"
+        value="CustomizationTools"
+      />
+      <label for="option6">Customization Tools</label><br /><br />
+
+      <label for="textarea">Any suggestion or comments?</label><br /><br>
+      <textarea id="textarea" name="textarea" placeholder="Enter your suggestion here...." maxlength="1000" ></textarea>
+      <br /><br />
+
+      <input type="submit" value="Submit" id="submit" />
+
+      <input type="reset" />
+    </form>
+  </body>
+</html>
